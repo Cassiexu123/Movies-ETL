@@ -4,14 +4,14 @@ The purpose of this project is to gather the Wikipedia data, Kaggle metadata, an
 
 ## Process
 There are 4 main parts of this process:
--write an ETL function to read three data files.
+- write an ETL function to read three data files.
 The function takes the Wikipedia JSON, the Kaggle metadata and MovieLens csv files and creates three separate DataFrames.
--extract and transform the Wikipedia data.
+- extract and transform the Wikipedia data.
 We filtered out the TV shows, consolidated the redundant data, removed the duplicates and formatted the Wikipedia data.
--extract and transform the Kaggle and rating data.
+- extract and transform the Kaggle and rating data.
 Again, we consolidated the redundant data, removed the duplicates, formatted and grouped the data.
 The Kaggle and rating data were then merged with the Wikipedia movies DataFrame.
--load the data to a PostgreSQL Movie Database.
+- load the data to a PostgreSQL Movie Database.
 Select * from movies
 Limit 100; 
 ## Results
