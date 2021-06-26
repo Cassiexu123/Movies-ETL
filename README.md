@@ -13,6 +13,4 @@ Again, we consolidated the redundant data, removed the duplicates, formatted and
 The Kaggle and rating data were then merged with the Wikipedia movies DataFrame.
 - load the data to a PostgreSQL Movie Database.
 
-## Results
-Run a query on the PostgreSQL database.
-![]
+
