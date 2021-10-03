@@ -2,6 +2,11 @@
 ## Overview
 The purpose of this project is to gather the Wikipedia data, Kaggle metadata, and the Movielens rating data from Wekipedia and Kaggle website. However, the original data is not "flat data", firstly, we have to clean up the bad data. Then I used Python's pandas library to transform the data into a working dataframe. Finally, connected to PostgreSQL for analysis use.
 
+## Data Source
+- movies_metadata.csv
+- rating.csv
+- wikipedia-movies.json
+
 ## Process
 There are 4 main parts of this process:
 - write an ETL function to read three data files.
@@ -13,4 +18,6 @@ Again, we consolidated the redundant data, removed the duplicates, formatted and
 The Kaggle and rating data were then merged with the Wikipedia movies DataFrame.
 - load the data to a PostgreSQL Movie Database.
 
+![](movies_query.png)
 
+![](ratings_query.png)
